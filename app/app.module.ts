@@ -15,6 +15,10 @@ import { HomeComponent } from './home/home.component';
 import { routing, routedComponents } from './app.routing';
 import { HeroService } from './hero.service';
 import { HeroSearchComponent } from './hero-search.component';
+import { FooterComponent } from './layout/footer/footer.component';
+import { QuickSidebarComponent } from './layout/quick-sidebar/quick-sidebar.component';
+import { SidebarComponent } from './layout/sidebar/sidebar.component';
+import { TopNavigationBarComponent } from './layout/top-navigation-bar/top-navigation-bar.component';
 
 @NgModule({
   imports: [
@@ -27,6 +31,10 @@ import { HeroSearchComponent } from './hero-search.component';
     AppComponent,
     HomeComponent,
     HeroSearchComponent,
+    FooterComponent,
+    QuickSidebarComponent,
+    SidebarComponent,
+    TopNavigationBarComponent,
     routedComponents
   ],
   providers: [
