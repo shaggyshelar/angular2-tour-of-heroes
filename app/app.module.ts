@@ -11,6 +11,7 @@ import { InMemoryDataService } from './in-memory-data.service';
 
 import './rxjs-extensions';
 import { AppComponent } from './app.component';
+import { HomeComponent } from './home/home.component';
 import { routing, routedComponents } from './app.routing';
 import { HeroService } from './hero.service';
 import { HeroSearchComponent } from './hero-search.component';
@@ -24,6 +25,7 @@ import { HeroSearchComponent } from './hero-search.component';
   ],
   declarations: [
     AppComponent,
+    HomeComponent,
     HeroSearchComponent,
     routedComponents
   ],
@@ -32,6 +34,7 @@ import { HeroSearchComponent } from './hero-search.component';
     { provide: XHRBackend, useClass: InMemoryBackendService }, // in-mem server
     { provide: SEED_DATA, useClass: InMemoryDataService }     // in-mem server data
   ],
-  bootstrap: [AppComponent]
+  //bootstrap: [AppComponent]
+  bootstrap: [HomeComponent]
 })
 export class AppModule { }
